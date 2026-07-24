@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <link rel="stylesheet" href="../css/signup.css">
+
+</head>
+
+<body>
+    <form id="container" onsubmit=" Account ">
+        <h2>Create your account</h2>
+        <p id="sign">Sign up to acces the practice dashboard.</p>
+        <div id="inp">
+            <div>
+
+                <label for="fname">First name:</label><br>
+                <input type="text" placeholder="Enter First Name" id="fname">
+            </div>
+
+
+            <div>
+                <label for="lname">Last name:</label><br>
+                <input type="text" placeholder="Enter Last Name" id="lname">
+            </div>
+        </div>
+<br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" name="" id="email" placeholder="Enter your Email Address">
+        <br><br>
+        <div id="inp2">
+            
+            <div >
+                
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="Password" placeholder="Enter your password">
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password:</b></label><br>
+                <input type="password" name="" id="confirmPassword" placeholder="Enter your password">
+            </div>
+        </div>
+        <p id="ch">Use at least 8 characters,with <br> letter & numbers</p>
+
+        <input type="checkbox" name="" id="Terms" > <span>I agree to the Terms</span>
+
+        <br><br>
+        <button id="btn" onclick="signup()">
+             Create Account
+           
+        </button>
+    </form>
+   <script src="../js/signup.js"> </script>
+</body>
+
+</html>

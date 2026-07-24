@@ -1,0 +1,44 @@
+
+    
+        #head{
+            text-align: center;
+            margin-right:40px ;
+
+        }
+        #pp{
+            padding-top: -30px;
+        }
+        #in{
+            
+            width:300px ;
+            height: 25px;
+            border-radius: 5px;
+            border-color: aqua;
+        }
+      
+        #btn{
+            width: 300px;
+            height: 30px;
+            background-color: aqua;
+            border-radius: 5px;
+            font-size: medium;
+        }
+        #wel{
+            border: 1px solid black;
+            padding: 20px;
+            padding-left: 65px;
+            border-radius: 20px;
+            border-color: aqua;
+            width: 350px;
+            background-color: #e7ebea;
+            
+        }
+        #lab{
+            font-size: large;
+        }
+        #sp1{
+            padding-left: 30px;
+        }
+        
+        
+    
