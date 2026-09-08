@@ -1,40 +1,68 @@
-function signup(){
-    let Firstname = document.getElementById("fname").value;
-    let Lastname = document.getElementById("lname").value;
-    let email = document.getElementById("email").value.trim();
-    let Password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirmPassword").value;
-    let terms = document.getElementById("terms").checked;
+
+function signup() {
+    let first = document.getElementById("fname").value.trim();
+    let last = document.getElementById("lname").value;
+    let mail = document.getElementById("mail").value;
+    let password = document.getElementById("pass").value;
+    let confirm = document.getElementById("conf").value;
+    let checkbox = document.getElementById("checked");
+
+    if (first == "" || last == "" || mail == "" || password == "" || confirm == "") {
+        alert("All fields are required");
+        return false;
+    }
+    else if (first.length < 2 || last.length < 2) {
+        alert("Enter valid Name");
+        return false;
+    }
+    else if (!/^[A-Za-z]+$/.test(first) || !/^[A-Za-z]+$/.test(last)) {
+        alert("name should contain only alphabet");
+        return false;
+    }
+    else if (!mail.endsWith("@gmail.com")) {         // regex   / ^[^@\s] + @[^@\s] + \.[^@\s] + {8,}+ $ /
+        alert("Please enter a valid email");
+        return false;
+    }
+    else if (password.length < 8) {
+        alert("Password must be of at least 8 character's");
+        return false;
+    }
+    else if (!/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{8,}$/.test(password)) {
+        alert("Password must contain at least one character, one number, and one special character");
+        return false;
+    }
+    else if (confirm != password) {
+        alert("Password and confirm password must be same");
+        return false;
+    }
+    else if (!checkbox.checked) {
+        alert("please read terms & conditions");
+        return false;
+    }
+    else {
+
+        let users = JSON.parse(localStorage.getItem("users")) || [];
 
 
-    if(Firstname ==="" || Lastname ==="" || email ==="" || Password ==="" || confirmPassword==="" ){
-        alert("Please fill all the boxes.");
+        // New user
+        let user = {
+            firstName: first,
+            lastName: last,
+            email: mail,
+            password: password
+        };
+
+        // Add new user
+        users.push(user);
+
+        // Save users
+        localStorage.setItem("users", JSON.stringify(users));
+
+        alert("Account created successfully");
+
+        window.location.href = "./signin.html";
+
         return false;
 
     }
-    if(Password.length < 8 ){
-        alert("Password must be at least 8 characteers long.");
-        return false;
-
-    }
-    if(Password !== confirmPassword){
-        alert("password does't match.");
-        return false;
-    }
-    if(!terms){
-        alert("plaase agree to thr terms.");
-        return false;
-
-    }
-    if(!email.endsWith("@gmail.com")){
-        alert("only gmail addresses are allowed.");
-        return false;
-
-    }
-    else{
-        alert("Account created successfully!");
-    }
-    
-
-
 }

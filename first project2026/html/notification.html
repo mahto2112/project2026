@@ -1,40 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="../css/notification.css">
 </head>
+
 <body>
-       <div id="first">
-                <div id="box1">
-                    <div id="bt">
-                        <button id="bt1">DU</button>Demo User <br>demo@webtech.practice
+    <div id="container">
+        <div id="box1">
+            <div id="bt">
+                <div id="bt1">DU</div>
+                    <div>
+                        <div id="name">Demo User</div>
+                        <div id="email">demo@webtech.practice</div>
+                    </div>
+            </div>
+
+            <hr id="line">
+            <div>
+                <h4>DASHBOARD</h4>
+                <div id="dash">
+
+                    <div> <a href="./overview.html">overview</a> </div>
+                    <br>
+                    <div> <a href="./profile.html">Profile settings</a> </div>
+                    <br>
+                    <div> <a href="security.html">Security</a> </div>
+                    <br>
+
+
+                    <div id="btnn"> <a href="./notification.html">Notification</a></div>
+                    <h4 id="quick">QUICK ACTION</h4>
+                    <p> <a href="help&support.html"> Help & Support</a></p>
+
+                </div>
+            </div>
+            
+            <div id="footer1">
+                <h5>ACCOUNT</h5>
+                <p class="sign"> <a onclick="signout()">sign out</a> </p>
+            </div>
+        </div> 
+        <div id="box">
+            <div id="head">WebTechPractice Dashboard</div>
+
+            <br>
+            <br>
+
+            <div id="main">
+                <h2>Notification</h2>
+              
+                <h4><img src="/image/mdi_bell.png" alt=""> Notification preferences</h4>
+
+
+                <p>Manage how and when you receive notifications about your account activity.</p>
+                <br>
+
+                <div id="two">
+                    <div class="bxx">
+                        <h3> <img src="/image/email-notification.png" alt="">Email Notification</h3>
+                        <p> Receive important updates via email</p>
+                        <input type="checkbox" name="" id="checked" class="checks">Enable email notifications
+
+                    </div>
+                    <div class="bxx">
+                        <h3> <img src="/image/symbols_lock.png" alt=""> Email Notification</h3>
+                        <p> Receive important updates via email</p>
+                        <input type="checkbox" name="" id="checked" class="checks">Enable email notifications
+
                     </div>
 
-                    <hr id="line">
-                    <h4>DASHBOARD</h4>
-                    <div id="dash">
+                </div>
+                <br><br>
+                <h4><img src="/image/Vector.png" alt=""> Recent Activity</h4>
 
-                        <div><a href="./overview.html ">overview</a> </div>
-                        <br>
-                        <div> <a href="./profile.html">Profile settings</a> </div>
-                        <br>
-                        <div id="btnn"> <a href="./security.html"> Security</a> </div>
-                        <br>
-                            
-                        
-                        <div> <a href="./notification.html">Notification</a> </div>
-                        <h4 id="quick">QUICK ACTION</h4>
-                        <p>Help & Support</p>
+                <div class="bxx2">
+                    <br>
+                    <input type="checkbox" id="checked">
+                    <p>Profile Updated</p>
+                    <p>Your Profile information was successfully updated <br> Today</p>
 
-                    </div>
-                    <div id="footer1">
-                        <h5>ACCOUNT</h5>
-                        <p class="sign"> <a href="./signin.html">sign out</a> </p>
-                    </div>
                 </div>
 
+
             </div>
+
+        </div>
+
+    </div>
+  
 </body>
+<script src="../js/notification.js"></script>
+
 </html>

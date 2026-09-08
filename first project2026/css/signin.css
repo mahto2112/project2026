@@ -1,44 +1,96 @@
+#head {
+    text-align: center;
+    margin-right: 40px;
 
-    
-        #head{
-            text-align: center;
-            margin-right:40px ;
+}
 
+#pp {
+    padding-top: -30px;
+}
+
+#in {
+
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border-color: aqua;
+}
+
+.btn {
+
+        background-color: #4ECDC4;
+        border: 1px solid #4ECDC4;
+        width: 420px;
+        height: 45px;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FBFBFF;
+        margin-top: -10px;
+       
+        margin-bottom: -20px;
+
+
+}
+
+#checked {
+    font-size: x-small;
+    border-color: #4ECDC4;
+}
+form{
+    margin-top: 70px;
+     margin-left: 33%;
+}
+
+#wel {
+    border: 0px solid black;
+    padding-top: 50px;
+    padding:50px;
+    border-radius: 25px;
+    border-color: aqua;
+    width: 420px;
+    background-color: rgba(251, 251, 255, 1);
+   
+    font-family: sans-serif;
+    border-top: 7px solid rgba(78, 205, 196, 1);
+
+}
+
+#lab {
+    font-size: large;
+}
+footer{
+    font-size: xx-small;
+}
+  a{
+            text-decoration: none;
+            color:rgba(78, 205, 196, 1);
         }
-        #pp{
-            padding-top: -30px;
-        }
-        #in{
-            
-            width:300px ;
-            height: 25px;
-            border-radius: 5px;
-            border-color: aqua;
-        }
-      
-        #btn{
-            width: 300px;
-            height: 30px;
-            background-color: aqua;
-            border-radius: 5px;
-            font-size: medium;
-        }
-        #wel{
-            border: 1px solid black;
-            padding: 20px;
-            padding-left: 65px;
-            border-radius: 20px;
-            border-color: aqua;
-            width: 350px;
-            background-color: #e7ebea;
-            
-        }
-        #lab{
-            font-size: large;
-        }
-        #sp1{
-            padding-left: 30px;
-        }
-        
-        
+
+#sp1 {
+    padding-left: 59px;
+}
+
+
+.inp {
+    width: 400px;
+    height: 45px;
+    padding-left: 20px;
+    border-radius: 12px;
+    border: 1px solid #4ECDC4;
+    background-color: #F1F3F4;
+   
+
+
+}
+body{
+    background-color:#F1F3F4;
     
+}
+@media (max-width: 700px) {
+
+    form {
+        width: 90%;
+        margin: 30px auto;
+    }
+}

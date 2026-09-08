@@ -1,59 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-   <link rel="stylesheet" href="../css/signup.css">
-
+    <link rel="stylesheet" href="../css/signup.css">
+    <script src="../js/signup.js">
+    </script>
 </head>
-
 <body>
-    <form id="container" onsubmit=" Account ">
-        <h2>Create your account</h2>
-        <p id="sign">Sign up to acces the practice dashboard.</p>
-        <div id="inp">
-            <div>
-
-                <label for="fname">First name:</label><br>
-                <input type="text" placeholder="Enter First Name" id="fname">
+    <form onsubmit="return signup()">
+        <div id="container">
+            <div id="head">
+                <p id="heading">Create your account</p>
+                <p class="sgn">Sign up to access the practice dashboard</p>
             </div>
-
-
             <div>
-                <label for="lname">Last name:</label><br>
-                <input type="text" placeholder="Enter Last Name" id="lname">
+                <label for="">First Name:</label>
+                <br>
+                <input type="text" class="inp " id="fname" placeholder="Enter First Name">
             </div>
+            <div>
+                <label for="" >Last Name:</label>
+                <br>
+                <input type="text" class="inp" id="lname" placeholder="Enter Last Name">
+            </div>
+            <div>
+                <label for="">Email Address:</label>
+                <br>
+                <input type="email" id="mail" placeholder="Enter your email address">
+            </div>
+            <div>
+                <label for="">Password:</label>
+                <br>
+                <input type="password" id="pass" class="inp " placeholder="Create Password">
+            </div>
+            <div>
+                <label for="">Confirm Password:</label>
+                <br>
+                <input type="password" id="conf" class="inp" placeholder="Confirm password">
+            </div>
+            <p id="use">Use at least 8 characters,with <br>  letter and number</p>
+            <div id="check">
+                <input type="checkbox" id="checked" >
+                <span>I agree to the Terms</span>
+            </div>
+            <button class="btn" id="btt" type="submit">Create Account</button>
+            <p class="lst">Already have account?<a href="./signin.html">Sign in</a></p>
         </div>
-<br>
-        <label for="email">Email Address:</label><br>
-        <input type="email" name="" id="email" placeholder="Enter your Email Address">
-        <br><br>
-        <div id="inp2">
-            
-            <div >
-                
-                <label for="password">Password:</label><br>
-                <input type="password" name="password" id="Password" placeholder="Enter your password">
-            </div>
-            <div>
-                <label for="confirmPassword">Confirm Password:</b></label><br>
-                <input type="password" name="" id="confirmPassword" placeholder="Enter your password">
-            </div>
-        </div>
-        <p id="ch">Use at least 8 characters,with <br> letter & numbers</p>
-
-        <input type="checkbox" name="" id="Terms" > <span>I agree to the Terms</span>
-
-        <br><br>
-        <button id="btn" onclick="signup()">
-             Create Account
-           
-        </button>
     </form>
-   <script src="../js/signup.js"> </script>
 </body>
-
 </html>

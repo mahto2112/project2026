@@ -5,108 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <link rel="stylesheet" href="../css/overview.css">
+
+
 </head>
 
 <body>
-    <div id="container">
+
+    <form>
         <div id="box1">
             <div id="bt">
-                <button id="bt1">DU</button>Demo User <br>demo@webtech.practice
+                <div id="bt1">DU</div>
+                <div>
+                    <div id="name">Demo User</div>
+                    <div id="email">demo@webtech.practice</div>
+                </div>
             </div>
+            <hr>
+            <h4>DASHBOARD</h4>
 
-            <hr id="line">
-             <h4>DASHBOARD</h4>
             <div id="dash">
-               
-                    <div id="btnn">
-                       <a href="./overview.html">overview</a>
-                    </div>
-                        <br>
-                        <div> <a href="./profile.html">Profile settings</a> </div>
-                        <br>
-                        <div > <a href="./security.html  ">Security</a> </div>
-                        <br>
-                            
-                        
-                        <div> <a href="./notification.html"> Notification</a></div>
-                        <h4 id="quick">QUICK ACTION</h4>
-                        <p>Help & Support</p>
+
+                <div id="btnn"> <a href="./overview.html">overview</a></div>
+                <br>
+                <div> <a href="./profile.html">Profile settings</a></div>
+                <br>
+                <div> <a href="./security.html">Security</a></div>
+                <br>
+                <div><a href="./notification.html">Notification</a></div>
+                <h4 id="quick">QUICK ACTION</h4>
+                <p><a href="help&support.html">Help & Support</a></p>
 
             </div>
             <div id="footer1">
                 <h5>ACCOUNT</h5>
-                <p class="sign"><a href="./signin.html">sign out </a> </p>
-
-
+                <p class="sign"> <a onclick="signout()">sign out</a> </p>
             </div>
 
         </div>
+
         <div id="box2">
-            <div id="head">WebTechPractice Dashboard</div>
-
-            <br>
-            <br>
-            <div id="four">
-                <div>
-                    <h3>welcome back,Demo User</h3>
-                    <p>Manage your profile setting and account preferences your data is securrely stored in your
-                        browser's
-                        localStorage.</p>
-                </div>
-                <br><br>
-                <div id="theme">
-                    <div id="th">
-                        <h6>Theme</h6>
-                        <p> Dark/Light mode persisted <br> across all pages</p>
-
-                        <button id="btn"></button>
-                    </div>
-                    <div id="th">
-                        <h6>Authentication</h6>
-                        <p> Secure session stored in <br>browser storage</p>
-                        <button id="btn"></button>
-                    </div>
-                    <div id="th">
-                        <h6>Profile</h6>
-                        <p>20% profile completed(1/5 fields)</p>
-
-
-                        <button id="btn"></button>
-
-                    </div>
-                    <div id="th">
-                        <h6>Security</h6>
-                        <p> Password protection and account Security</p>
-
-                        <button id="btn"></button>
-                    </div>
-                </div>
-
-
-                <h3>Quick Actions</h3>
-
-                <div id="footer">
-                    <div class="foot">
-                        <h3>Edit Profile</h3>
-                        update your personal information
-                    </div>
-                    <div class="foot">
-                        <h3>Change password</h3>
-                        <p>update your Account Security</p>
-                    </div>
-
-
-                </div>
+            <div id="head">
+                WebTechPractice Dashboard
             </div>
+            <div>
+                <br>
+                <br>
+                <div id="four">
+                    <div>
+                        <h2 id="dashh">welcome back,<span id="username"></span></h2>
+                        <p>
+                            Manage your profile setting and account preferences your data is securrely stored in your
+                            browser'slocalStorage.
+                        </p>
+                    </div>
+                    <div id="theme">
 
+                        <div class="th">
+                            <h4>Theme</h4>
+                            <p class="in">Dark/Light mode persisted<br> across all pages</p>
+                            <button class="btn"></button>
+                        </div>
+                        <div class="th">
+                            <h4>Authentication</h4>
+                            <p class="in">
+                                Secure session stored in<br>browser storage </p>
+                            <button class="btn"></button>
+                        </div>
+                        <div class="th">
+                            <h4>Profile</h4>
+                            <p class="in"> 20% profile completed(1/5 <br> fields)</p>
+                            <button class="btn"></button>
+                        </div>
+                        <div class="th">
 
+                            <h4>Security</h4>
+
+                            <p class="in">Password protection and account Security</p>
+                            <button class="btn"></button>
+
+                        </div>
+
+                    </div>
+                    <h3>Quick Actions</h3>
+                    <div id="footer">
+
+                        <div class="foot">
+
+                            <h3><a href="profile.html">Edit Profile</a> </h3>
+                            <p> update your personal information</p>
+
+                        </div>
+
+                        <div class="foot">
+
+                            <h3><a href="security.html">Change password </a></h3>
+
+                            <p> update your Account Security</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </div>
-
+    </form>
+    <script src="../js/overview.js"></script>
 </body>
 
 </html>
